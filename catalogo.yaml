@@ -1,0 +1,22 @@
+# Qué es este catálogo y a quién sirve.
+#
+# ES UN ÍNDICE DELGADO: no contiene ningún plugin, los referencia por git-subdir contra el
+# repositorio público de cada paquete, fijando un `ref`. Nada de lo que hay aquí se edita a
+# mano — `catalogos.py` lo deriva de los descriptores de los saberes.
+#
+# Público: un abogado tiene que poder agregarlo sin cuenta de GitHub. Instalar no da acceso:
+# cada servicio exige un contrato con asiento.
+
+# El identificador que Claude Code exige: kebab-case, sin espacios. NO es el título — ese
+# vive en `descripcion`, que es lo que el cliente muestra.
+identificador: mindthecontext-legal
+
+# Título legible. Sólo informativo dentro de este archivo.
+nombre: MindTheContext · Legal
+descripcion: >-
+  Saberes para abogados: borradores de escrituras con cada cláusula explicada y criterio
+  tributario chileno con la fuente a la vista. El abogado revisa, decide y firma.
+
+# La variante que sirve. Claude y Codex piden manifiestos distintos y el paquete publica las dos;
+# este catálogo elige una.
+variante: claude
