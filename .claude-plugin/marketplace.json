@@ -1,0 +1,33 @@
+{
+  "name": "mindthecontext-legal",
+  "owner": {
+    "name": "MindTheContext"
+  },
+  "metadata": {
+    "description": "Saberes para abogados: borradores de escrituras con cada cláusula explicada y criterio tributario chileno con la fuente a la vista. El abogado revisa, decide y firma."
+  },
+  "plugins": [
+    {
+      "name": "escrituras-legales",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/mindthecontext/plugin-escrituras-legales.git",
+        "path": "claude",
+        "ref": "v0.1.7"
+      },
+      "description": "Prepara el borrador de una escritura de compraventa de inmueble urbano entre personas naturales, al contado o con mutuo hipotecario: exige los antecedentes que pide la inscripción, elige las cláusulas con criterios curados, le pregunta al abogado lo que no puede decidir y entrega la minuta con un expediente que explica cada párrafo. Versión con biblioteca sintética, sin validar por abogados.",
+      "category": "productivity"
+    },
+    {
+      "name": "normativa-tributaria",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/mindthecontext/plugin-normativa-tributaria.git",
+        "path": "claude",
+        "ref": "v0.3.92"
+      },
+      "description": "Cómo el SII ha resuelto casos tributarios en Chile: oficios, circulares y resoluciones con su cita literal, su vigencia declarada y sus límites.",
+      "category": "productivity"
+    }
+  ]
+}
